@@ -15,7 +15,7 @@ var postdate = entry.published.$t;var cdyear = postdate.substring(0,4);var cdmon
 
 if(showpostthumbnails==true) 
 document.write('<img class="recent_thumb" src="'+thumburl+'"/>');
-document.write('<b><a href="'+posturl+'" target ="_top">'+posttitle+'</a></b><br>');
+document.write('<b><a href="'+posturl+'" target ="_top">'+posttitle+'</a></b><p>');
 
     if ("content" in entry) {
       var postcontent = entry.content.$t;}
@@ -43,9 +43,9 @@ if (showpostsummary == true) {
 }
 
 var towrite='';var flag=0;
-document.write('<br><strong>');
+document.write('<p><strong>');
 
-if(showpostdate==true) {towrite=towrite+monthnames[parseInt(cdmonth,10)]+'-'+cdday+'-'+cdyear;flag=1;}
+if(showpostdate==true) {towrite=towrite+monthnames[parseInt(cdday,10)]+'-'+cdmonth+'-'+cdyear;flag=1;}
 
 if(showcommentnum==true) 
 {
@@ -61,7 +61,7 @@ flag=1;
 if(displaymore==true) 
 {
 if (flag==1) towrite=towrite+' | ';
-towrite=towrite+'<button class="btn btn-default"><a href="'+posturl+'" style="color:#fff" target ="_top">SEE MORE</a></button>';
+towrite=towrite+'<button class="btn btn-default"><a href="'+posturl+'" style="color:#fff;font-size:14px" target ="_top">SEE MORE</a></button>';
 flag=1;
 ;
 }
