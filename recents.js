@@ -43,9 +43,9 @@ if (showpostsummary == true) {
 }
 
 var towrite='';var flag=0;
-document.write('<p><strong>');
+document.write('<br><br><strong>');
 
-if(showpostdate==true) {towrite=towrite+monthnames[parseInt(cdmonth,10)]+'-'+cdday+'-'+cdyear;flag=1;}
+if(showpostdate==true) {towrite=towrite+cdday+'-'+monthnames[parseInt(cdmonth,10)]+'-'+cdyear;flag=1;}
 
 if(showcommentnum==true) 
 {
