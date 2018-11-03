@@ -32,7 +32,7 @@ if (showpostsummary == true) {
 }
 var towrite='';var flag=0;
 document.write('<br><strong>');
-if(showpostdate==true) {towrite=towrite+monthnames[cdday]+'-'+parseInt(cdmonth,10)+'-'+cdyear;flag=1;}
+if(showpostdate==true) {cdday+'-'+towrite=towrite+monthnames[parseInt(cdmonth,10)]+'-'+cdyear;flag=1;}
 if(showcommentnum==true) 
 {
 if (flag==1) {towrite=towrite+' | ';}
@@ -46,7 +46,7 @@ flag=1;
 if(displaymore==true) 
 {
 if (flag==1) towrite=towrite+' | ';
-towrite=towrite+'<button class="btn btn-default"><a href="'+posturl+'" target ="_top">SEE MORE</a></button>';
+towrite=towrite+'<button class="btn btn-default"><a href="'+posturl+'" target ="_top" style="color:#fff">SEE MORE</a></button>';
 flag=1;
 ;
 }
