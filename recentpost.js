@@ -30,16 +30,16 @@ document.write('<b><a href="'+posturl+'" target ="_top">'+posttitle+'</a></b><br
 if (showpostsummary == true) {
 
       if (postcontent.length < numchars) {
-          document.write('<i>');
+          document.write('');
          document.write(postcontent);
-          document.write('</i>');}
+          document.write('');}
       else {
-          document.write('<i>');
+          document.write('');
          postcontent = postcontent.substring(0, numchars);
          var quoteEnd = postcontent.lastIndexOf(" ");
          postcontent = postcontent.substring(0,quoteEnd);
          document.write(postcontent + '...');
-          document.write('</i>');}
+          document.write('');}
 }
 
 var towrite='';var flag=0;
@@ -61,7 +61,7 @@ flag=1;
 if(displaymore==true) 
 {
 if (flag==1) towrite=towrite+' | ';
-towrite=towrite+'<a href="'+posturl+'" class="url" target ="_top">Read more&#187;&#187;</a>';
+towrite=towrite+'<a href="'+posturl+'" class="btn btn-default" target ="_top">SEE MORE</a>';
 flag=1;
 ;
 }
