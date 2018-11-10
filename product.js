@@ -33,7 +33,7 @@ $(function(){
         e.preventDefault();
         var target = $(this).attr('href');
         $('html, body').animate({
-            scrollTop: $(target).offset().top - 45
+            scrollTop: $(target).offset().top - 65
         }, 500);
     })
 });
